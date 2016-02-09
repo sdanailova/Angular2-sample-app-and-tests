@@ -1,0 +1,8 @@
+<h3>Top Lectures</h3>
+<div class="grid grid-pad">
+	<div *ngFor="#lecture of lectures" class="col-1-4" (click)="gotoDetail(lecture)">
+		<div class="module lecture">
+			<h4>{{lecture.title}}</h4>
+		</div>
+	</div>
+</div>

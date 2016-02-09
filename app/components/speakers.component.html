@@ -1,0 +1,14 @@
+<div>
+  <h2>My speakers</h2>
+  <ul class="speakers">
+    <li *ngFor="#speaker of speakers"
+      [class.selected]="speaker === selectedSpeaker"
+      (click)="onSelect(speaker)">
+      <span class="badge">{{speaker.id}}</span> {{speaker.name}}
+    </li>
+  </ul>
+  <div *ngIf="selectedSpeaker">
+    <h2>{{selectedSpeaker.name | uppercase}} is my speaker</h2>
+    <button (click)="gotoDetail()">View Details</button>
+  </div>
+</div>
