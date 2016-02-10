@@ -1,5 +1,4 @@
 System.register(['angular2/testing', "../app/services/speaker.service"], function(exports_1) {
-    "use strict";
     var testing_1, speaker_service_1;
     return {
         setters:[
@@ -10,7 +9,6 @@ System.register(['angular2/testing', "../app/services/speaker.service"], functio
                 speaker_service_1 = speaker_service_1_1;
             }],
         execute: function() {
-            // !!!! referenciite w index.html trqbwa da sa syshtite kato files pattern v karma.config.js
             testing_1.describe('universal truths', function () {
                 testing_1.it('should do math', function () {
                     testing_1.expect(1 + 1).toEqual(2);
